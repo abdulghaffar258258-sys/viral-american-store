@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Viral American — everyday style, tech and lifestyle finds.">
+  <title>Viral American | Shop the Latest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar"><span>✈ Free shipping on orders over $50</span><span>🔥 Fresh finds. Great prices.</span><span>☎ Customer support</span></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Viral American home"><span class="brand-mark">VA</span><span>VIRAL <b>AMERICAN</b><small>Style • Quality • For You</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <div class="header-actions"><button aria-label="Search" id="searchToggle">⌕</button><button aria-label="Cart" id="cartButton">🛒 <span class="cart-count" id="cartCount">0</span></button></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO VIRAL AMERICAN</p>
+        <h1>SHOP THE LATEST<br><em>USA</em> STYLE</h1>
+        <p class="hero-sub">Trendy • Unique • Everyday essentials</p>
+        <a class="button" href="#shop">Shop Now <span>→</span></a>
+      </div>
+      <div class="hero-perks"><div>🚚 <span><b>Easy Delivery</b><small>Shipping options at checkout</small></span></div><div>🔒 <span><b>Secure Shopping</b><small>Checkout-ready design</small></span></div><div>💬 <span><b>Friendly Support</b><small>We're here to help</small></span></div></div>
+    </section>
+
+    <section class="categories section-wrap" id="categories">
+      <button class="category active" data-category="All"><span>✦</span>All Products</button>
+      <button class="category" data-category="Fashion"><span>🧥</span>Fashion</button>
+      <button class="category" data-category="Shoes"><span>👟</span>Shoes</button>
+      <button class="category" data-category="Accessories"><span>⌚</span>Accessories</button>
+      <button class="category" data-category="Tech"><span>🎧</span>Tech</button>
+      <button class="category" data-category="Lifestyle"><span>🎒</span>Lifestyle</button>
+    </section>
+
+    <section class="section-wrap products-section" id="shop">
+      <div class="section-heading"><div><p class="eyebrow red-text">CURATED FOR YOU</p><h2>🔥 Featured Products</h2></div><span id="productCount" class="muted">6 items</span></div>
+      <div class="search-panel" id="searchPanel" hidden><input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products"></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="promo" id="about"><p class="eyebrow">VIRAL AMERICAN</p><h2>More Than Just Shopping</h2><p>Find your next everyday favorite.</p><a href="#shop" class="button">Explore Collection →</a></section>
+    <section class="newsletter section-wrap"><div><h2>Get the good stuff first.</h2><p>Subscribe for store news and new arrivals.</p></div><form id="newsletterForm"><input type="email" placeholder="Your email address" required aria-label="Your email address"><button class="button" type="submit">Subscribe</button></form><p id="newsletterMessage" class="form-message" aria-live="polite"></p></section>
+  </main>
+
+  <footer id="contact"><div class="footer-brand"><a class="brand" href="#"><span class="brand-mark">VA</span><span>VIRAL <b>AMERICAN</b><small>Style • Quality • For You</small></span></a><p>Discover everyday style and useful finds.</p></div><div><h3>Quick Links</h3><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#about">About Us</a></div><div><h3>Customer Care</h3><a href="#contact">Contact</a><a href="#contact">Shipping Policy</a><a href="#contact">Returns</a></div><div><h3>Follow Along</h3><p>Instagram · Facebook · TikTok</p><small>Replace these with your real social links.</small></div><div class="copyright">© <span id="year"></span> Viral American. Demo storefront — connect payment and shipping services before selling.</div></footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" hidden>
+    <div class="cart-head"><h2>Your Cart</h2><button id="closeCart" aria-label="Close cart">✕</button></div>
+    <div id="cartItems"></div><div class="cart-total"><b>Total</b><b id="cartTotal">$0.00</b></div>
+    <p class="cart-note">Demo cart only. Online payments are not connected yet.</p>
+    <button class="button full-width" id="checkoutButton">Continue</button>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>
